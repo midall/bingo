@@ -7,5 +7,6 @@ public class Player {
     public Player(String f, String l){
         fname = f;
         lname = l;
+        BingoCard bc = new BingoCard();
     }
 }
