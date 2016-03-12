@@ -1,4 +1,4 @@
-/* branch */
+/* TRUNK */
 package bingo;
 
 public class Number {
