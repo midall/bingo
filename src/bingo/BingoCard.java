@@ -1,4 +1,3 @@
-/* CREATED BY ME */
 package bingo;
 
 public class BingoCard {
