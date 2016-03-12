@@ -3,6 +3,7 @@ package bingo;
 
 public class BingoCard {
     //private int[] cardNumbers = new int[24];
+    //NumberCollection nc  =new NumberCollection();
     
     public BingoCard(){}
     
