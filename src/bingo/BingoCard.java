@@ -2,6 +2,8 @@
 package bingo;
 
 public class BingoCard {
+    //private int[] cardNumbers = new int[24];
+    
     public BingoCard(){}
     
     private void generateNumbers(int n){}
