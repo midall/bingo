@@ -2,11 +2,20 @@
 package bingo;
 
 public class Player {
-    private String fname, lname;
+    private String name;
     
-    public Player(String f, String l){
-        fname = f;
-        lname = l;
+    public Player(){
+        
         BingoCard bc = new BingoCard();
     }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    
 }
