@@ -22,7 +22,7 @@ public class Bingo {
             if(choice == 1) {
                 int numOfPlayers;
                 
-                System.out.println("How many players are in this game?");
+                System.out.println("How many players are in this game? ");
                 numOfPlayers = input.nextInt();
                 ArrayList<Player> players = new ArrayList<Player>(numOfPlayers);
 
@@ -30,9 +30,14 @@ public class Bingo {
                 for(int i = 0; i < numOfPlayers; i++)
                 {
                     Player plr = new Player();
-                    System.out.print("What is Player " + (i + 1) + " name?");
+                    System.out.print("What is Player " + (i + 1) + " name? ");
                     String name = input.next();
                     plr.setName(name);
+                    
+                    /* FOR MORE THAN ONE CARDS
+                    System.out.print("How many Bingo cards for " + plr.getName());
+                    numOfCards = input.nextInt();
+                    */
                     
                     players.add(plr);
                 }
