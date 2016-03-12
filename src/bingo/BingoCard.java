@@ -1,13 +1,19 @@
 /* TRUNK */
 package bingo;
+import java.util.ArrayList;
 
 public class BingoCard {
     //private int[] cardNumbers = new int[24];
     //NumberCollection nc  =new NumberCollection();
+    private ArrayList<Integer> cardNumbers = new ArrayList<Integer>();
     
-    public BingoCard(){}
+    public BingoCard(){
+        generateNumbers(24);
+    }
     
-    private void generateNumbers(int n){}
+    private void generateNumbers(int n){
+        
+    }
     
     public void stampNumber(int n){}
     

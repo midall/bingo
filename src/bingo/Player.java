@@ -5,8 +5,8 @@ public class Player {
     private String name;
     
     public Player(){
-        
-        BingoCard bc = new BingoCard();
+       BingoCard bc = new BingoCard();
+       
     }
     
     public String getName() {
