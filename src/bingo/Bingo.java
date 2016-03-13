@@ -1,4 +1,4 @@
-/* TRUNK 1 */
+/* TRUNK */
 package bingo;
 
 import bingo.*;
