@@ -28,8 +28,7 @@ public class BingoCard {
     public NumberCollection numberMissing(){
         NumberCollection nc  =new NumberCollection();
         return nc;
+        
     }
-    
-    
     
 }
