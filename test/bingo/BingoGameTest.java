@@ -45,8 +45,7 @@ public class BingoGameTest {
         Number expResult = null;
         Number result = instance.getNextNumber();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -59,8 +58,7 @@ public class BingoGameTest {
         Number expResult = null;
         Number result = instance.random();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -74,8 +72,7 @@ public class BingoGameTest {
         boolean expResult = false;
         boolean result = instance.house(card);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
     
 }

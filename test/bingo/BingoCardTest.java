@@ -43,8 +43,7 @@ public class BingoCardTest {
         int n = 0;
         BingoCard instance = new BingoCard();
         instance.stampNumber(n);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -58,8 +57,7 @@ public class BingoCardTest {
         boolean expResult = false;
         boolean result = instance.containsNumber(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -72,8 +70,7 @@ public class BingoCardTest {
         int expResult = 0;
         int result = instance.numbersStamped();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -87,8 +84,7 @@ public class BingoCardTest {
         NumberCollection expResult = instance1;
         NumberCollection result = instance.numberMissing();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
     
 }

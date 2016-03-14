@@ -59,7 +59,6 @@ public class NumberTest {
     /**
      * Test of setNumber method, of class Number.
      */
-    
     @Test
     public void testSetNumber() {
         System.out.println("setNumber");

@@ -43,8 +43,7 @@ public class NumberCollectionTest {
         Number n = null;
         NumberCollection instance = new NumberCollection();
         instance.addNumber(n);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -58,8 +57,7 @@ public class NumberCollectionTest {
         boolean expResult = false;
         boolean result = instance.containsNumber(n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -73,8 +71,7 @@ public class NumberCollectionTest {
         boolean expResult = false;
         boolean result = instance.containsCollection(nc);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -87,8 +84,7 @@ public class NumberCollectionTest {
         int expResult = 0;
         int result = instance.count();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -102,8 +98,7 @@ public class NumberCollectionTest {
         Number expResult = null;
         Number result = instance.get(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
     
 }
