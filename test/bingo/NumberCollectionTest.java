@@ -2,6 +2,7 @@ package bingo;
 
 import bingo.NumberCollection;
 import bingo.Number;
+import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -9,11 +10,13 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Michalis
- */
 public class NumberCollectionTest {
+    
+    NumberCollection nc;
+    ArrayList<Number> newarr_test;
+    ArrayList<Number> newarr_test2;
+    Number n1;
+    Number n2;
     
     public NumberCollectionTest() {
     }
@@ -28,6 +31,11 @@ public class NumberCollectionTest {
     
     @Before
     public void setUp() {
+        nc = new NumberCollection();
+        newarr_test = new ArrayList<Number>();
+        newarr_test2 = new ArrayList<Number>();
+        n1 = new Number(1);
+        n2 = new Number(2);
     }
     
     @After
@@ -40,9 +48,10 @@ public class NumberCollectionTest {
     @Test
     public void testAddNumber() {
         System.out.println("addNumber");
-        Number n = null;
         NumberCollection instance = new NumberCollection();
-        instance.addNumber(n);
+        instance.addNumber(n1);
+        newarr_test.add(n1);
+        assertEquals(newarr_test, instance.ncarr);
         
     }
 
@@ -52,10 +61,22 @@ public class NumberCollectionTest {
     @Test
     public void testContainsNumber() {
         System.out.println("containsNumber");
-        Number n = null;
+      //  Number n = null;
         NumberCollection instance = new NumberCollection();
+        instance.addNumber(n1);
         boolean expResult = false;
-        boolean result = instance.containsNumber(n);
+        boolean result = instance.containsNumber(n2);
+        assertEquals(expResult, result);
+        
+    }
+    @Test
+    public void testContainsNumber1() {
+        System.out.println("containsNumber");
+      //  Number n = null;
+        NumberCollection instance = new NumberCollection();
+        instance.addNumber(n1);
+        boolean expResult = true;
+        boolean result = instance.containsNumber(n1);
         assertEquals(expResult, result);
         
     }
