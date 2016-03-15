@@ -37,8 +37,8 @@ public class NumberTest {
      * Test of getNumber method, of class Number.
      */
     @Test
-    public void testGetNumber1() {
-        System.out.println("getNumber1");
+    public void testGetNumber() {
+        System.out.println("getNumber");
         Number instance = new Number(4);
         int expResult = 4;
         int result = instance.getNumber();
@@ -47,8 +47,8 @@ public class NumberTest {
     }
     
     @Test
-    public void testGetNumber2() {
-        System.out.println("getNumber2");
+    public void testGetNumber1() {
+        System.out.println("getNumber - 1");
         Number instance = new Number(7);
         int expResult = 7;
         int result = instance.getNumber();
@@ -73,8 +73,6 @@ public class NumberTest {
         instance.setNumber(val);
         */
         
-    }
-    
-    
+    }    
 
 }
