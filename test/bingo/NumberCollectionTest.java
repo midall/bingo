@@ -120,18 +120,19 @@ public class NumberCollectionTest {
     @Test
     public void testGet() {
         System.out.println("get");
-        int index = 0;
-        Number expResult = new Number(index);
-        Number result = nc1.get(index);
-        assertArrayEquals(expResult, result);
+        int index = 1;
+        Number n3 = nc1.get(index);
+        assertEquals(n1.getNumber(), n3.getNumber());
         
     }
-
+    
+    /* FOR testGet() IF WE USE OBJECTS
     private boolean assertArrayEquals(Number expResult, Number result) {
         
         boolean eq = expResult.getNumber() == result.getNumber();
         return eq;
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-        
+    */
+    
 }
