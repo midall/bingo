@@ -58,7 +58,7 @@ public class NumberCollectionTest {
     /**
      * Test of containsNumber method, of class NumberCollection.
      */
-    @Test
+    @Test(timeout = 1000)
     public void testContainsNumber() {
         System.out.println("containsNumber");
         nc1.addNumber(n1);
@@ -84,13 +84,12 @@ public class NumberCollectionTest {
     @Test
     public void testContainsCollection() {
         System.out.println("containsCollection");
-        /*
         NumberCollection nc = null;
         NumberCollection instance = new NumberCollection();
         boolean expResult = false;
         boolean result = instance.containsCollection(nc);
         assertEquals(expResult, result);
-        */
+        
     }
 
     /**
