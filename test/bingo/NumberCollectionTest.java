@@ -41,6 +41,8 @@ public class NumberCollectionTest {
     
     @After
     public void tearDown() {
+        newarr_test1.clear();
+        newarr_test2.clear();
     }
 
     /**
