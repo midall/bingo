@@ -22,13 +22,12 @@ public class NumberCollection{
     }
     
     public int count(){
-        return 0;
+        return ncarr.size();
     }
     
     public Number get(int index){
         
-        Number nu = new Number(index);
-        return nu;
+        return new Number(index);
         //return this;
     }
     
