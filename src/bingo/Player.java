@@ -38,4 +38,8 @@ public class Player {
         bingoc.add(new BingoCard());
     }
     
+    public int countCards() {
+        return bingoc.size();
+    }
+    
 }
