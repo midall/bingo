@@ -42,6 +42,11 @@ public class Bingo {
                     players.add(plr);
                 }
                 
+                // your code
+                for(Player plr: players){
+                  System.out.println("ID: " + plr.getPid() + " NAME: " + plr.getName() + "No.CARDS: " + plr.countCards());
+                }
+                
                 
 
             } else if(choice == 0) {
