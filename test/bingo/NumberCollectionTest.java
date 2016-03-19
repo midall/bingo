@@ -10,7 +10,7 @@ import org.junit.Ignore;
 import static org.junit.Assert.*;
 
 public class NumberCollectionTest {
-    
+    /**/
     NumberCollection nc1;
     NumberCollection nc2;
     ArrayList<Number> newarr_test1;
