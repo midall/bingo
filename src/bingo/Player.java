@@ -51,20 +51,29 @@ public class Player {
     
     //NEW NUMBER
     public void newNumber(int n){
-        for (BingoCard bc_item : bingoc) {
-            bc_item.stampNumber(n);
+        for (BingoCard bc : bingoc) {
+            bc.stampNumber(n);
         } 
         
     }
     
-    //CHECK IF BINGO
-    public boolean isBingo(BingoCard bc){
-        
-        if(bc.getNoStamp() == 24) {
-            return true;
-        } else {
-            return false;
+    //STATISTICS -- MUST CHANGE
+    public void leftNumbers(){
+        for (BingoCard bc : bingoc) {
+            System.out.println("PLAYER:" + this.getName() + " BCID:" + bc.getBCid() + " NUMBER OF STAMPS:" + bc.getNoStamp());
         }
+    }
+    
+    //CHECK IF BINGO
+    public boolean isBingo(){
+        for (BingoCard bc : bingoc) {
+            if(bc.getNoStamp() == 24) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
     }
     
 }

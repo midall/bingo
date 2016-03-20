@@ -14,7 +14,6 @@ public class Bingo {
         do {
             System.out.println("Please Select: ");
             System.out.println("1. New Game ");
-            System.out.println("2. Play Game ");
             System.out.println("0. Exit ");
 
 
@@ -41,7 +40,6 @@ public class Bingo {
                     
                     for(int j = 1; j < numOfCards; j++) {
                         plr.newCard();
-                        System.out.print("y");
                     }
                     
                     
@@ -53,12 +51,23 @@ public class Bingo {
                   System.out.println("ID: " + plr.getPid() + " NAME: " + plr.getName() + " No.CARDS: " + plr.countCards());
                 }
                 
-                
-
-            } else if(choice == 2) {
-                
+                //GAME START
+                System.out.println("GAME STARTED! ");
                 BingoGame bg = new BingoGame();
+                boolean bingo = false;
                 
+                while(bingo == false) {
+                    int no = bg.getNextNumber();
+                    System.out.println("NEXT NUMBER: " + no);
+                    for(Player plr: players){
+                        plr.newNumber(no);
+                        plr.leftNumbers();
+                        if(plr.isBingo()) {
+                            System.out.println("PLAYER " + plr.getName() + " WON!");
+                            bingo = true;
+                        }
+                    }
+                }
                 
             } else if(choice == 0) {
                 System.out.println("Bye bye!");
