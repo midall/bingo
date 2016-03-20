@@ -1,23 +1,33 @@
 /* TRUNK */
 package bingo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class BingoGame {
-    public BingoGame(){}
+    Map<Integer, Boolean> numberTable;
     
-    public Number getNextNumber(){
-        Number nu = new Number(0);
-        return nu;
+    public BingoGame(){
+        this.numberTable = new HashMap<Integer, Boolean>();
+        generateTable();
     }
     
-    public Number random(){
-        Number nu = new Number(0);
-        return nu;
+    private void generateTable(){
+        for(int i=1; i<=75; i++) {
+            numberTable.put(i, true);
+        }
     }
     
-    public boolean house(BingoCard card){
-        return false;
+    public int getNextNumber(){
+        
+        int random;
+        do {
+            random = (int )(Math.random() * 75 + 1);
+            //System.out.println(random);
+        } while (numberTable.get(random) == false);
+
+        numberTable.put(random, false);
+        return random;
     }
-            
-            
     
 }

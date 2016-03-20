@@ -14,13 +14,14 @@ public class Bingo {
         do {
             System.out.println("Please Select: ");
             System.out.println("1. New Game ");
+            System.out.println("2. Play Game ");
             System.out.println("0. Exit ");
 
 
             choice = input.nextInt();
 
             if(choice == 1) {
-                int numOfPlayers;
+                int numOfPlayers, numOfCards;
                 
                 System.out.println("How many players are in this game? ");
                 numOfPlayers = input.nextInt();
@@ -34,21 +35,31 @@ public class Bingo {
                     String name = input.next();
                     plr.setName(name);
                     
-                    /* FOR MORE THAN ONE CARDS
-                    System.out.print("How many Bingo cards for " + plr.getName());
+                    /* FOR MORE THAN ONE CARDS */
+                    System.out.print("How many Bingo cards for " + plr.getName() + ": ");
                     numOfCards = input.nextInt();
-                    */
+                    
+                    for(int j = 1; j < numOfCards; j++) {
+                        plr.newCard();
+                        System.out.print("y");
+                    }
+                    
                     
                     players.add(plr);
                 }
                 
-                // your code
+                //PLAYERS DATA
                 for(Player plr: players){
-                  System.out.println("ID: " + plr.getPid() + " NAME: " + plr.getName() + "No.CARDS: " + plr.countCards());
+                  System.out.println("ID: " + plr.getPid() + " NAME: " + plr.getName() + " No.CARDS: " + plr.countCards());
                 }
                 
                 
 
+            } else if(choice == 2) {
+                
+                BingoGame bg = new BingoGame();
+                bg.
+                
             } else if(choice == 0) {
                 System.out.println("Bye bye!");
                 
