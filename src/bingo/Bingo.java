@@ -58,7 +58,7 @@ public class Bingo {
             } else if(choice == 2) {
                 
                 BingoGame bg = new BingoGame();
-                bg.
+                
                 
             } else if(choice == 0) {
                 System.out.println("Bye bye!");
